@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/4/materia/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/d83c9c9ae8.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container pt-2" id="container">
+        <div class="row" id="app">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header text-center">
+                        Registrarse
+                        <i class="fa fa-wpforms float-left"></i>
+                    </div>
+                    <form class="card-body" id="form">
+                        <label>Nombre de usuario:</label>
+                        <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Usuario" id="nombre"> 
+                        </div>
+                        <label>Email:</label>
+                        <div class="form-group">
+                            <input class="form-control" type="email" placeholder="ejemplo@gmail.com" id="email">
+                        </div>
+                        <label>Contraseña:</label>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input class="form-control" type="password" id="password">
+                                <span class="input-group-btn">
+                                    <button type="button" id="mostrar-pass" class="btn btn-outline-primary">
+                                    <i class="fas fa-eye"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-block" type="submit">
+                            Enviar
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-8" id="informacion-usuario"></div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
